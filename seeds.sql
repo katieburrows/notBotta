@@ -5,7 +5,7 @@ CREATE DATABASE notBottaDB;
 USE notBottaDB;
 
 CREATE TABLE products (
-    id INT NOT NULL AUTO_INCREMENT,
+    id INT,
     name VARCHAR(200) NOT NULL,
     description VARCHAR(300) NOT NULL,
     terms VARCHAR(300),
@@ -14,15 +14,8 @@ CREATE TABLE products (
     PRIMARY KEY(id)
 );
 
--- INSERT INTO products (itemName, category, price) 
--- VALUES ("Commemorative Princess Diana Beanie Baby", "Collectables", 50000.00),
--- ("Jurassic Park 6-Pog Hologram Set With Slammer", "Collectables", 1000000.00),
--- ("Kid Cuisine Furby", "Collectables", 200.00), 
--- ("Foot Rub", "Services", 3.00), 
--- ("Lawn Mowing", "Services", 25.00), 
--- ("Dinner Chef", "Services", 200.00), 
--- ("My MacBook Pro from college", "Items", 10.00), 
--- ("Broken mirror", "Items", 5.00), 
--- ("Landscaping gravel", "Items", 400.00); 
+INSERT INTO products (id, name, description, terms, image_url, expirationDate)
+VALUES(1284, "Crystal Light Liquid", "3-pack of 1.62 fl oz. bottles
+Offer only redeemable at Sam's Club", "Offer valid on Crystal Light Liquid in 3-pack of 1.62 fl oz. bottles", "Offer only redeemable at Sam's Club.", "http://s3.amazonaws.com/ibotta-product/offer/Fs9JO4bjT5Kakh920d4WEw-large.png", "2016-04-03 06:59:00 UTC");
 
 SELECT * FROM products;
